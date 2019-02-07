@@ -109,4 +109,5 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
 * `logTime` - Optional boolean property to output `startTime` and `endTime` in bundle tracker file.
 * `path` - Optional bundle tracker output path.
 * `publicPath` - Optional property to override `output.publicPath`.
+* `sriHashEnabled` - Defaults to `false`. Set to `true` to enable calculation of Sub-Resource Integrity Hashes.
 * `sriHashAlgorithm` - Optional algorithm to use when calculating sub-resource integrity hashes. Valid options: `sha256`, `sha384`, or `sha512`. Defaults to `sha384`.

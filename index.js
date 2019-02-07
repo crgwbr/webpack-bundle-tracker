@@ -18,6 +18,7 @@ function Plugin(options) {
   if (this.options.logTime === undefined) {
     this.options.logTime = DEFAULT_LOG_TIME;
   }
+  this.options.sriHashEnabled = !!this.options.sriHashEnabled;
   if (this.options.sriHashAlgorithm === undefined) {
     this.options.sriHashAlgorithm = DEFAULT_SRI_HASH_ALGO;
   }
@@ -84,7 +85,9 @@ Plugin.prototype.apply = function(compiler) {
           }
           if (compiler.options.output.path) {
             F.path = path.join(compiler.options.output.path, file);
-            F.sriHash = _getSRIHash(F.path)
+            if (self.options.sriHashEnabled) {
+              F.sriHash = _getSRIHash(F.path);
+            }
           }
           return F;
         });

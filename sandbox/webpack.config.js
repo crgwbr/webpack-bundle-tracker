@@ -8,7 +8,9 @@ module.exports = {
         new BundleTracker({
             path: __dirname,
             filename: './dist/webpack-stats.json',
+            sriHashEnabled: true,
             sriHashAlgorithm: 'sha512',
+            indent: 4,
         }),
     ],
     entry: {

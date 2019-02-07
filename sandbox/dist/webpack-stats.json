@@ -1,1 +1,11 @@
-{"status":"done","chunks":{"main":[{"name":"main.js","path":"/Users/crgwbr/Projects/webpack-bundle-tracker/sandbox/dist/main.js","sriHash":"sha512-7mTf5s2FNwVU//8WFetpi43RebQCY1+p3IACm0WmaQhSMO+uzDPBKVwJ/MvXX5aiesTrc0T8ne9KigdqJYqp/A=="}]}}
+{
+    "status": "done",
+    "chunks": {
+        "main": [
+            {
+                "name": "main.js",
+                "path": "/Users/crgwbr/Projects/webpack-bundle-tracker/sandbox/dist/main.js"
+            }
+        ]
+    }
+}
